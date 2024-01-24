@@ -1,11 +1,11 @@
-import { testDefinitions } from "./definitions.js";
-import * as Deno from "./deno.types.gen.js";
+import { testDefinitions } from "./definitions.ts";
+import * as Deno from "./deno.types.gen.ts";
 
 export type {
   TestContext,
   TestDefinition,
   TestStepDefinition,
-} from "./deno.types.gen.js";
+} from "./deno.types.gen.ts";
 
 export const test: typeof Deno.test = Object.assign(function test() {
   handleDefinition(arguments);
